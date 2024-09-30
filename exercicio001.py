@@ -1,3 +1,4 @@
 array_compras = ["Banana", "Laranja", "Maçã", "Pêra"]
-for i in range(len(array_compras)):
+tamanho = len(array_compras)
+for i in range(tamanho):
     print(array_compras[i])
