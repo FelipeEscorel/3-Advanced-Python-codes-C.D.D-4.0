@@ -1,5 +1,7 @@
-from biblioteca import piramide, piramide2
+from biblioteca import *
 num = int(input("Digite um número: "))
 piramide(num)
-num2 = int(input("\nDigite um número: "))
-piramide2(num2)
+num = int(input("\nDigite um número: "))
+piramide2(num)
+num = input("Digite um texto: ")
+vogais(num)
