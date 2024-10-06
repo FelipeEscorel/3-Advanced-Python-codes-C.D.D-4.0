@@ -15,7 +15,7 @@ while num != 4 and cont2 == 0:
             password[a] = input("Cadastre a senha (Apenas números inteiros): ")
             print()
     elif num == 2:
-        cont -= tamUser
+        cont = 0
         cont += 1
         usuario = input("Digite o nome do usuário: ")
         for b in range(tamUser):
@@ -25,11 +25,11 @@ while num != 4 and cont2 == 0:
                 if senha == password[b]:
                     print("Login efetuado!\n")
                     cont2 += 4
-                while senha != password[b] and tent < 3:
+                while senha != password[b] and tent < 2:
                     print("Senha inválida!\n")
                     senha = input("Digite a senha novamente: ")
                     tent += 1
-                    if tent > 2:
+                    if tent == 2 and senha != password[b]:
                         print("Limite de tentativas excedido. Tente novamente mais tarde!")
                         cont2 += 4
                     elif senha == password[b]:
@@ -39,11 +39,10 @@ while num != 4 and cont2 == 0:
             print("Usuário não cadastrado.\n")
     elif num == 3:
         print("Usuários cadastrados: ")
-        cont -= tamUser
+        cont = 0
         for c in range(tamUser):
             cont+=1
             print(f"{cont}º Usuário: {user[c]}")
-            cont2 += 4
     elif num == 4:
         print("Fim do programa")
     else:
