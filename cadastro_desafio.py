@@ -47,3 +47,9 @@ while num != 4 and cont2 == 0:
         print("Fim do programa")
     else:
         print("Função não disponível.\n")
+print()
+print("Usuários cadastrados:")
+print(user"\n")
+print("Senhas cadastradas(respectivamente):")
+print(password)
+
