@@ -10,8 +10,7 @@ while num != 4 and cont2 == 0:
     num = int(input("O que você deseja fazer?\n1 - Cadastro de usuários\n2 - Login\n3 - Mostrar usuários\n4 - Sair\n"))
     if num == 1:
         for a in range(tamUser):
-            cont += 1
-            user[a] = input(f"Cadastre o nome do {cont}º usuário: ")
+            user[a] = input(f"Cadastre o nome do usuário: ")
             password[a] = input("Cadastre a senha (Apenas números inteiros): ")
             print()
     elif num == 2:
@@ -49,7 +48,6 @@ while num != 4 and cont2 == 0:
         print("Função não disponível.\n")
 print()
 print("Usuários cadastrados:")
-print(user"\n")
+print(user)
 print("Senhas cadastradas(respectivamente):")
 print(password)
-
